@@ -30,7 +30,7 @@ feedbackForm.addEventListener("input", (evt) => {
 });
 feedbackForm.addEventListener("submit", (evt) =>{
     evt.preventDefault();
-    if (formData.email === "" || formData.message === "" ) {
+    if (email.value === "" || message.value === "" ) {
         alert("Fill please all fields")
     }
     else{

@@ -10,6 +10,8 @@ const message = feedbackForm.message;
 const savedData = JSON.parse(localStorage.getItem(localStorageKey)) || {};
 email.value = savedData.email ?? "";
 message.value = savedData.message ?? "";
+formData.email = email.value;
+formData.message = message.value;
 
 feedbackForm.addEventListener("input", (evt) => { 
     
